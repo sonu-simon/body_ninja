@@ -21,7 +21,7 @@ class BndBox extends StatelessWidget {
         print(
             'leftShoulder: ${re['keypoints'][5]['x']} , ${re['keypoints'][5]['y']}');
         var _x = ((re['keypoints'][5]['x'] + re['keypoints'][6]['x']) / 2);
-        var _y = re['keypoints'][5]['y'];
+        var _y = ((re['keypoints'][5]['y'] + re['keypoints'][6]['y']) / 2);
         var scaleW, scaleH, x, y;
 
         if (screenH / screenW > previewH / previewW) {

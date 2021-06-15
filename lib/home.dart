@@ -1,3 +1,4 @@
+import 'package:body_ninja/animatedBox.dart';
 import 'package:body_ninja/bindbox.dart';
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
@@ -83,6 +84,7 @@ class _HomePageState extends State<HomePage> {
                     screen.height,
                     screen.width,
                     _model),
+                AnimatedShape(),
               ],
             ),
     );
